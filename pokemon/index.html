@@ -3,111 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pokémon Community Game — MkLive</title>
-  <meta name="description" content="Comment jouer au Pokémon Community Game avec l'extension pendant les lives de MkLive : commandes, capture, boutique et collection.">
-  <meta name="theme-color" content="#121214">
-  <link rel="preload" href="../assets/fonts/unbounded-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../assets/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <script src="../assets/js/site.js" defer></script>
+  <title>Cette page a déménagé — MkLive</title>
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url=../extensions/">
+  <link rel="canonical" href="../extensions/">
 </head>
-<body>
-  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
-
-  <div class="filigrane" aria-hidden="true">
-    <object id="filigrane-svg" data="../assets/img/logo/logo-anime.svg" type="image/svg+xml"><img src="../assets/img/logo/logo-mklive-transparent.png" alt=""></object>
-  </div>
-
-  <header class="entete">
-    <div class="entete__contenu">
-      <a class="marque" href="../" aria-label="MkLive, accueil"><img src="../assets/img/logo/logo-mklive-transparent.png" alt="MkLive"></a>
-      <nav aria-label="Pages du site">
-        <ul class="menu">
-          <li><a href="../regles/">Règlement</a></li>
-          <li><a href="../abonner/">S'abonner</a></li>
-          <li><a href="../setup/">Config</a></li>
-          <li><a href="../pokemon/" aria-current="page">Pokémon</a></li>
-          <li><a href="../commandes/">Commandes</a></li>
-          <li><a href="../vip-modo/">VIP et modo</a></li>
-          <li><a href="../faq/">FAQ</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main id="contenu" class="page">
-    <section class="tete-page tete-page--emote">
-      <div>
-        <h1>Pokémon Community Game</h1>
-        <p class="chapeau">Capture, collectionne et fais évoluer tes Pokémon pendant les lives, directement depuis le chat.</p>
-      </div>
-      <img class="tete-page__emote" src="../assets/img/emotes/MkLive_Mascotte_HYPE_ANIME_112.gif" alt="Emote animée MkLive pleine de joie" width="256" height="256">
-    </section>
-
-    <div class="grille">
-      <section class="bloc bloc--gauche" aria-labelledby="t-quoi">
-        <h2 id="t-quoi">C'est quoi ?</h2>
-        <p>Le Pokémon Community Game est une <strong>extension Twitch gratuite</strong>. Pendant que tu regardes un live, des Pokémon sauvages apparaissent : tu peux les capturer, les collectionner et les faire combattre, avec de simples commandes tapées dans le chat.</p>
-        <p>Les combats, les équipes, les évolutions, les échanges et l'utilisation des objets se font surtout depuis l'<strong>interface de l'extension</strong>, à côté du live.</p>
-      </section>
-      <section class="bloc bloc--droite" aria-labelledby="t-demarrer">
-        <h2 id="t-demarrer">Pour commencer</h2>
-        <ol class="paliers">
-          <li><b>1</b><span><strong>Viens sur un live de MkLive</strong> et ouvre le chat.</span></li>
-          <li><b>2</b><span><strong>Tape <code>!pokestart</code></strong> pour créer ton profil et recevoir un Pokémon de départ.</span></li>
-          <li><b>3</b><span><strong>Quand un Pokémon est annoncé</strong>, tape <code>!pokecatch</code> pour tenter de le capturer. Tu peux préciser la Ball à utiliser.</span></li>
-          <li><b>4</b><span><strong>Passe par la boutique</strong> avec <code>!pokeshop</code> pour acheter des Poké Balls avec la monnaie du jeu.</span></li>
-        </ol>
-        <div class="note"><p>Une seule tentative compte par apparition, même si tu participes depuis plusieurs chaînes. Sans Ball précisée, le jeu utilise une Poké Ball, puis une Premier Ball si tu n'as plus de Poké Balls.</p></div>
-      </section>
-      <section class="bloc bloc--moitie" aria-labelledby="t-p-debut">
-        <h2 id="t-p-debut">Commencer, capturer et acheter</h2>
-<ul class="commandes">
-<li class="commande"><code>!pokestart</code><p>Crée ton profil et te donne un Pokémon de départ.</p><button class="copier" type="button" data-texte="!pokestart">Copier</button></li>
-<li class="commande"><code>!pokecatch</code><p>Tente de capturer le Pokémon annoncé dans le chat.</p><button class="copier" type="button" data-texte="!pokecatch">Copier</button></li>
-<li class="commande"><code>!pokecatch ultraball</code><p>Choisit une Ball de ton inventaire : remplace « ultraball » par celle que tu souhaites.</p><button class="copier" type="button" data-texte="!pokecatch ">Copier</button></li>
-<li class="commande"><code>!pokeshop pokeball 10</code><p>Achète dix Poké Balls avec la monnaie du jeu.</p><button class="copier" type="button" data-texte="!pokeshop ">Copier</button></li>
-</ul>
-      </section>
-      <section class="bloc bloc--moitie" aria-labelledby="t-p-profil">
-        <h2 id="t-p-profil">Ton profil et ta collection</h2>
-<ul class="commandes">
-<li class="commande"><code>!pokebuddy</code><p>Présente ton compagnon sélectionné.</p><button class="copier" type="button" data-texte="!pokebuddy">Copier</button></li>
-<li class="commande"><code>!pokepass</code><p>Affiche ton solde et tes statistiques de combat (même rôle que !pokebank).</p><button class="copier" type="button" data-texte="!pokepass">Copier</button></li>
-<li class="commande"><code>!pokedex génération ou type</code><p>Affiche ta progression de collection selon le filtre.</p><button class="copier" type="button" data-texte="!pokedex ">Copier</button></li>
-<li class="commande"><code>!pokecheck Pokémon ou numéro</code><p>Vérifie si tu possèdes une espèce. Si tu l'as déjà, il peut n'y avoir aucune réponse.</p><button class="copier" type="button" data-texte="!pokecheck ">Copier</button></li>
-<li class="commande"><code>!pokeloyalty</code><p>Consulte ta fidélité sur la chaîne.</p><button class="copier" type="button" data-texte="!pokeloyalty">Copier</button></li>
-</ul>
-      </section>
-      <section class="bloc bloc--moitie" aria-labelledby="t-p-cadeaux">
-        <h2 id="t-p-cadeaux">Cadeaux et événements</h2>
-<ul class="commandes">
-<li class="commande"><code>!pokedaily</code><p>Ta récompense quotidienne, sur le Discord du PCG.</p><button class="copier" type="button" data-texte="!pokedaily">Copier</button></li>
-<li class="commande"><code>!pokegift</code><p>Ouvre un cadeau que tu possèdes grâce au chat.</p><button class="copier" type="button" data-texte="!pokegift">Copier</button></li>
-<li class="commande"><code>!pokegift rare</code><p>Ouvre un cadeau rare que tu possèdes.</p><button class="copier" type="button" data-texte="!pokegift rare">Copier</button></li>
-<li class="commande"><code>!pokeraid</code><p>Affiche la progression d'un raid événementiel.</p><button class="copier" type="button" data-texte="!pokeraid">Copier</button></li>
-</ul>
-      </section>
-      <section class="bloc bloc--moitie" aria-labelledby="t-p-infos">
-        <h2 id="t-p-infos">Informations sur les Pokémon</h2>
-<ul class="commandes">
-<li class="commande"><code>!recent Pokémon</code><p>La dernière apparition de cette espèce.</p><button class="copier" type="button" data-texte="!recent ">Copier</button></li>
-<li class="commande"><code>!pokemon Pokémon</code><p>Palier, statistiques et efficacité des types.</p><button class="copier" type="button" data-texte="!pokemon ">Copier</button></li>
-<li class="commande"><code>!move attaque</code><p>Informations détaillées sur une attaque.</p><button class="copier" type="button" data-texte="!move ">Copier</button></li>
-</ul>
-      </section>
-      <section class="bloc bloc--large" aria-labelledby="t-p-note">
-        <h2 id="t-p-note">Bon à savoir</h2>
-        <div class="note"><p>Ces commandes appartiennent au <strong>jeu</strong>, pas au bot de MkLive. Le Pokémon Community Game évolue avec ses événements et ses mises à jour : certaines fonctions peuvent changer. En cas de doute, demande dans le chat ou sur le <a href="https://discord.gg/mRp8CDYbB3">Discord</a>.</p></div>
-      </section>
-    </div>
-  </main>
-
-  <footer class="pied">
-    <div class="pied__contenu">
-      <img src="../assets/img/logo/logo-mklive-transparent.png" alt="MkLive">
-      <p>Chaîne Twitch mklivee. Merci d'être là, la Mk Family compte sur toi. <a href="https://discord.gg/mRp8CDYbB3">Retrouve-nous sur Discord</a>.</p>
-    </div>
-  </footer>
+<body style="font-family:sans-serif;background:#121214;color:#f6f3ec;padding:2rem">
+  <p>Cette page a déménagé : <a style="color:#f6e6a8" href="../extensions/">cliquez ici pour la retrouver</a>.</p>
 </body>
 </html>

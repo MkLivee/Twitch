@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Règlement du chat — MkLive</title>
-  <meta name="description" content="Les règles du chat de la Mk Family et les sanctions appliquées par la modération.">
+  <title>Règlement et modération — MkLive</title>
+  <meta name="description" content="Les règles du chat de la Mk Family, les sanctions, la modération automatique et l'équipe de modération.">
   <meta name="theme-color" content="#121214">
   <link rel="preload" href="../assets/fonts/unbounded-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../assets/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
@@ -26,9 +26,8 @@
           <li><a href="../regles/" aria-current="page">Règlement</a></li>
           <li><a href="../abonner/">S'abonner</a></li>
           <li><a href="../setup/">Config</a></li>
-          <li><a href="../pokemon/">Pokémon</a></li>
+          <li><a href="../extensions/">Extensions</a></li>
           <li><a href="../commandes/">Commandes</a></li>
-          <li><a href="../vip-modo/">VIP et modo</a></li>
           <li><a href="../faq/">FAQ</a></li>
         </ul>
       </nav>
@@ -38,8 +37,8 @@
   <main id="contenu" class="page">
     <section class="tete-page tete-page--emote">
       <div>
-        <h1>Règlement du chat</h1>
-        <p class="chapeau">Bienvenue sur la chaîne MkLive ! Pour que tout le monde passe un bon moment, merci de respecter ces règles.</p>
+        <h1>Règlement et modération</h1>
+        <p class="chapeau">Bienvenue sur la chaîne MkLive ! Pour que tout le monde passe un bon moment, merci de respecter ces règles. Elles sont simples, et elles valent pour tout le monde.</p>
       </div>
       <img class="tete-page__emote" src="../assets/img/emotes/MkLive_Chibi_SALUT_FIXE_112.png" alt="Emote MkLive qui salue" width="256" height="256">
     </section>
@@ -48,12 +47,13 @@
       <section class="bloc bloc--large" aria-labelledby="t-regles">
         <h2 id="t-regles">Les règles</h2>
         <ol class="regles regles--deux">
-          <li class="regle"><div><h3>Respect avant tout</h3><p>Aucune insulte, moquerie, harcèlement ni propos discriminatoire (racisme, sexisme, homophobie, etc.).</p></div></li>
-          <li class="regle"><div><h3>Pas de spam</h3><p>Pas de messages répétés, de majuscules en excès ni de flood d'emotes.</p></div></li>
-          <li class="regle"><div><h3>Pas de publicité</h3><p>Pas d'auto-promotion ni de liens sans l'accord d'un modérateur ou du streamer.</p></div></li>
-          <li class="regle"><div><h3>Spoilers</h3><p>Évite les spoilers sur les jeux, films ou séries, sauf si on t'en a donné l'autorisation.</p></div></li>
-          <li class="regle"><div><h3>Contenu adapté</h3><p>Pas de contenu choquant, illégal ou à caractère adulte.</p></div></li>
-          <li class="regle"><div><h3>Respect des modérateurs</h3><p>Leurs décisions sont à respecter. Pour contester, passe par le Discord ou un message privé, pas dans le chat.</p></div></li>
+          <li class="regle"><div><h3>Respect avant tout</h3><p class="intro">Chacun est là pour passer un bon moment : on se parle comme on aimerait qu’on nous parle.</p><ul><li>Aucune insulte, moquerie ni propos blessant.</li><li>Aucun harcèlement, menace ni acharnement sur quelqu’un.</li><li>Aucun propos discriminatoire : racisme, sexisme, homophobie, transphobie, etc.</li><li>Un désaccord se règle calmement, sans s’en prendre à la personne.</li></ul></div></li>
+          <li class="regle"><div><h3>Pas de spam</h3><p class="intro">Un chat lisible est un chat agréable.</p><ul><li>Pas de message répété : le même message dans la minute est retiré automatiquement.</li><li>Pas de message écrit à moitié en majuscules ou plus : il est retiré automatiquement à partir de 8 lettres.</li><li>Pas de flood d’emotes ni de caractères en boucle.</li></ul></div></li>
+          <li class="regle"><div><h3>Pas de publicité</h3><p class="intro">Pas d’auto-promotion, d’invitations ni de liens sans l’accord d’un modérateur.</p><ul><li>Les liens sont retirés automatiquement.</li><li>Un modérateur peut t’autoriser à en poster un pendant une minute.</li><li>Les liens de la chaîne (Discord, site, page de soutien) sont toujours autorisés.</li></ul></div></li>
+          <li class="regle"><div><h3>Spoilers</h3><p class="intro">Évite de gâcher l’histoire des autres.</p><ul><li>Pour les jeux, films et séries : pas de révélations sur l’intrigue, les fins ou les rebondissements.</li><li>Si on t’y autorise clairement, tu peux en parler. En cas de doute, demande d’abord.</li></ul></div></li>
+          <li class="regle"><div><h3>Contenu adapté</h3><p class="intro">La communauté est ouverte à tous, donc le contenu doit l’être aussi.</p><ul><li>Pas de contenu choquant, violent ou à caractère adulte.</li><li>Rien d’illégal, y compris dans les liens partagés.</li></ul></div></li>
+          <li class="regle"><div><h3>Respect des modérateurs</h3><p class="intro">L’équipe est là pour protéger l’ambiance du chat.</p><ul><li>Leurs décisions sont à respecter.</li><li>Pour contester une sanction, passe par le Discord ou un message privé, jamais dans le chat.</li><li>Si tu es banni, la demande de débannissement se fait directement sur Twitch.</li></ul></div></li>
+          <li class="regle"><div><h3>Écris en français</h3><p class="intro">Le live se déroule en français, et il est plus simple de te répondre dans cette langue.</p><ul><li>Les autres langues sont moins bien comprises : écrire en français permet de mieux échanger.</li></ul></div></li>
         </ol>
       </section>
       <section class="bloc bloc--gauche" aria-labelledby="t-sanctions">
@@ -70,6 +70,27 @@
         <p>Un filtre surveille le chat pendant les lives. Il retire les messages qui contiennent un lien, qui sont écrits à moitié en majuscules ou qui répètent le même texte dans la minute.</p>
         <p>Tu as droit à <strong>trois avertissements</strong> par semaine. Le quatrième message fautif te vaut un timeout de 10 secondes, puis de 60 secondes. Le compteur repart à zéro <strong>chaque lundi</strong>.</p>
         <div class="note"><p><strong>Un lien à partager ?</strong> Demande à un modérateur : il peut t'autoriser à en poster un pendant une minute. Les modérateurs et les VIP ne sont pas concernés par ce filtre.</p></div>
+      </section>
+      <section class="bloc bloc--large" aria-labelledby="equipe">
+        <h2 id="equipe">L'équipe de modération</h2>
+        <div class="duo">
+          <div>
+            <h3>Ce que fait un modérateur</h3>
+            <ul class="avantages">
+              <li>Il veille au respect des règles pendant les lives.</li>
+              <li>Il supprime les messages hors règles, avertit et applique des timeouts.</li>
+              <li>Il peut autoriser un lien ponctuel avec <strong>!permit</strong>.</li>
+              <li>Il active le <strong>mode urgence</strong> (<strong>!lock</strong>) en cas de flood ou de raid malveillant.</li>
+            </ul>
+            <p style="margin-top:1rem">Toutes les commandes de l'équipe sont détaillées sur la page <a href="../commandes/#equipe">Commandes</a>.</p>
+          </div>
+          <div>
+            <h3>Rejoindre l'équipe</h3>
+            <p>Envie de rejoindre l'équipe de modération MkLive ? Montre ton sérieux, ta maturité et ton implication dans la communauté.</p>
+            <p>Les modérateurs sont sélectionnés selon les <strong>besoins de la chaîne</strong> et la <strong>confiance accordée</strong>.</p>
+            <div class="note"><p><strong>Comment postuler ?</strong> Ouvre un ticket sur le <a href="https://discord.gg/mRp8CDYbB3">Discord</a> et envoie une petite candidature, tant que le recrutement est ouvert.</p></div>
+          </div>
+        </div>
       </section>
     </div>
   </main>

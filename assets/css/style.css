@@ -177,9 +177,13 @@ p { margin: 0 0 1rem; }
 
 /* Règlement */
 .regles { list-style: none; padding: 0; margin: 0; counter-reset: r; display: grid; gap: 0.8rem; }
-.regle { display: grid; grid-template-columns: 2.8rem 1fr; gap: 1rem; align-items: center; padding: 0.9rem 1.1rem; background: rgba(255, 255, 255, 0.04); border: 1px solid var(--bord); border-radius: 20px; }
+.regle { display: grid; grid-template-columns: 2.8rem 1fr; gap: 1rem; align-items: start; padding: 1rem 1.1rem; background: rgba(255, 255, 255, 0.04); border: 1px solid var(--bord); border-radius: 20px; }
 .regle::before { counter-increment: r; content: counter(r); display: grid; place-items: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: var(--or-irise); color: #17140b; font-family: var(--titre); font-weight: 700; }
 .regle p { margin: 0; color: var(--texte-doux); }
+.regle .intro { color: var(--texte-fort); margin-bottom: 0.5rem; }
+.regle ul { margin: 0; padding-left: 1.1rem; color: var(--texte-doux); }
+.regle ul li + li { margin-top: 0.3rem; }
+.bloc h3 { color: var(--texte-fort); margin: 0 0 0.6rem; }
 @media (min-width: 60rem) { .regles--deux { grid-template-columns: 1fr 1fr; } }
 
 .paliers { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: 0.7rem; }

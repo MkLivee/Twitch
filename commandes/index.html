@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Les commandes du chat — MkLive</title>
-  <meta name="description" content="Toutes les commandes du chat de MkLive : communauté, animation et jeux.">
+  <meta name="description" content="Toutes les commandes du chat de MkLive (communauté, animation, jeux, abonnés, équipe de modération) et ce que fait le bot automatiquement.">
   <meta name="theme-color" content="#121214">
   <link rel="preload" href="../assets/fonts/unbounded-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../assets/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
@@ -26,9 +26,8 @@
           <li><a href="../regles/">Règlement</a></li>
           <li><a href="../abonner/">S'abonner</a></li>
           <li><a href="../setup/">Config</a></li>
-          <li><a href="../pokemon/">Pokémon</a></li>
+          <li><a href="../extensions/">Extensions</a></li>
           <li><a href="../commandes/" aria-current="page">Commandes</a></li>
-          <li><a href="../vip-modo/">VIP et modo</a></li>
           <li><a href="../faq/">FAQ</a></li>
         </ul>
       </nav>
@@ -96,18 +95,54 @@
 <li class="commande"><code>!psn</code><p>L'identifiant PlayStation.</p><button class="copier" type="button" data-texte="!psn">Copier</button></li>
 <li class="commande"><code>!nintendo</code><p>L'identifiant Nintendo et le code ami.</p><button class="copier" type="button" data-texte="!nintendo">Copier</button></li>
 <li class="commande"><code>!ubisoft</code><p>L'identifiant Ubisoft.</p><button class="copier" type="button" data-texte="!ubisoft">Copier</button></li>
-<li class="commande"><code>!guidepokemon</code><p>Le lien vers le guide du Pokémon Community Game.</p><button class="copier" type="button" data-texte="!guidepokemon">Copier</button></li>
+<li class="commande"><code>!guidepokemon</code><p>Le lien vers la page des extensions et le guide du Pokémon Community Game.</p><button class="copier" type="button" data-texte="!guidepokemon">Copier</button></li>
 <li class="commande"><code>!rank</code><p>Le rang Valorant du moment.</p><button class="copier" type="button" data-texte="!rank">Copier</button></li>
 <li class="commande"><code>!victoires</code><p>Le score de victoires et de défaites de la session.</p><button class="copier" type="button" data-texte="!victoires">Copier</button></li>
 </ul>
       </section>
       <section class="bloc bloc--large" aria-labelledby="t-abos">
-        <h2 id="t-abos">Pour les abonnés et l'équipe</h2>
+        <h2 id="t-abos">Pour les abonnés</h2>
 <ul class="commandes">
 <li class="commande"><code>!clip</code><p>Créer un clip d'un moment fort du live. Réservé aux abonnés et aux modérateurs.</p><button class="copier" type="button" data-texte="!clip">Copier</button></li>
 </ul>
-        <div class="note"><p>Les modérateurs ont des commandes supplémentaires, détaillées sur la page <a href="../vip-modo/">VIP et modo</a>.</p></div>
+      </section>
+      <section class="bloc bloc--large" aria-labelledby="equipe">
+        <h2 id="equipe">Pour l'équipe de modération</h2>
+        <p class="groupe">Réservées aux modérateurs : elles agissent directement sur le chat et sur la chaîne. Pour le rôle et la candidature, rendez-vous sur la page <a href="../regles/#equipe">Règlement et modération</a>.</p>
+<ul class="commandes commandes--deux">
+<li class="commande"><code>!permit pseudo</code><p>Autorise quelqu'un à poster un lien pendant une minute.</p><button class="copier" type="button" data-texte="!permit ">Copier</button></li>
+<li class="commande"><code>!lock</code><p>Mode urgence : active le mode lent et le mode suiveurs uniquement.</p><button class="copier" type="button" data-texte="!lock">Copier</button></li>
+<li class="commande"><code>!unlock</code><p>Met fin au mode urgence et rouvre le chat.</p><button class="copier" type="button" data-texte="!unlock">Copier</button></li>
+<li class="commande"><code>!so pseudo</code><p>Met en avant un autre streamer.</p><button class="copier" type="button" data-texte="!so ">Copier</button></li>
+<li class="commande"><code>!raid pseudo</code><p>Annonce et lance un raid vers un streamer (écris le pseudo sans @).</p><button class="copier" type="button" data-texte="!raid ">Copier</button></li>
+<li class="commande"><code>!annonce texte</code><p>Envoie une annonce mise en avant dans le chat.</p><button class="copier" type="button" data-texte="!annonce ">Copier</button></li>
+<li class="commande"><code>!settitre texte</code><p>Change le titre du live.</p><button class="copier" type="button" data-texte="!settitre ">Copier</button></li>
+<li class="commande"><code>!setjeu jeu</code><p>Change la catégorie du live.</p><button class="copier" type="button" data-texte="!setjeu ">Copier</button></li>
+<li class="commande"><code>!sondage question | choix 1 | choix 2</code><p>Lance un sondage Twitch de deux minutes (de 2 à 5 choix).</p><button class="copier" type="button" data-texte="!sondage ">Copier</button></li>
+<li class="commande"><code>!prediction question | choix 1 | choix 2</code><p>Lance une prédiction Twitch.</p><button class="copier" type="button" data-texte="!prediction ">Copier</button></li>
+<li class="commande"><code>!gagnant 1</code><p>Désigne le choix gagnant d'une prédiction (son numéro).</p><button class="copier" type="button" data-texte="!gagnant ">Copier</button></li>
+<li class="commande"><code>!annuler</code><p>Annule la prédiction en cours.</p><button class="copier" type="button" data-texte="!annuler">Copier</button></li>
+<li class="commande"><code>!win</code><p>Ajoute une victoire au score de la session.</p><button class="copier" type="button" data-texte="!win">Copier</button></li>
+<li class="commande"><code>!lose</code><p>Ajoute une défaite au score de la session.</p><button class="copier" type="button" data-texte="!lose">Copier</button></li>
+<li class="commande"><code>!resetscore</code><p>Remet le score à zéro.</p><button class="copier" type="button" data-texte="!resetscore">Copier</button></li>
+<li class="commande"><code>!brb</code><p>Annonce une courte pause.</p><button class="copier" type="button" data-texte="!brb">Copier</button></li>
+<li class="commande"><code>!retour</code><p>Annonce que le live reprend.</p><button class="copier" type="button" data-texte="!retour">Copier</button></li>
+</ul>
         <p class="aucun" id="aucun" hidden>Aucune commande ne correspond à ta recherche.</p>
+      </section>
+      <section class="bloc bloc--large" aria-labelledby="auto">
+        <h2 id="auto">Ce que fait le bot tout seul</h2>
+        <p class="groupe">Pas besoin de taper quoi que ce soit : ces messages et ces actions se déclenchent automatiquement.</p>
+        <ul class="avantages">
+          <li><strong>Il accueille</strong> les nouveaux followers, abonnés et réabonnés.</li>
+          <li><strong>Il remercie</strong> pour les subs offerts, les bits, les dons et les raids reçus.</li>
+          <li><strong>Il souhaite la bienvenue</strong> à quelqu'un qui écrit pour la première fois.</li>
+          <li><strong>Il annonce</strong> le début et la fin du Train de la Hype, ainsi que les prédictions terminées ou annulées.</li>
+          <li><strong>Il prévient</strong> une minute avant une pause publicitaire.</li>
+          <li><strong>Il annonce le début du live</strong> sur le Discord, en mentionnant le rôle concerné.</li>
+          <li><strong>Il rappelle</strong> régulièrement, pendant les lives, le Discord, les suggestions, le statut VIP, les commandes ou l'abonnement.</li>
+          <li><strong>Il surveille le chat</strong> : liens, messages en majuscules et répétitions sont retirés (voir le <a href="../regles/">règlement</a>).</li>
+        </ul>
       </section>
     </div>
   </main>
