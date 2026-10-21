@@ -108,6 +108,14 @@ p { margin: 0 0 1rem; }
 .bouton--plein { background: var(--or-irise); color: #17140b; border-color: transparent; }
 .bouton:hover { filter: brightness(1.12); color: inherit; }
 .bouton--plein:hover { color: #17140b; }
+.bouton--grand { padding: 1rem 2.1rem; font-size: 1.15rem; }
+
+/* Bouton « S'abonner » toujours visible dans l'en-tête */
+.entete__cta {
+  flex: none; padding: 0.45rem 1.1rem; border-radius: 999px; background: var(--or-irise); color: #17140b;
+  font-weight: 700; text-decoration: none; white-space: nowrap; transition: filter 0.2s;
+}
+.entete__cta:hover { filter: brightness(1.12); color: #17140b; }
 
 /* Grille de blocs de largeurs variées */
 .grille { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin: 1.5rem 0; }
