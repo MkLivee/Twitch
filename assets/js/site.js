@@ -70,4 +70,26 @@
       document.body.removeChild(zone);
     }
   });
+  // Filtres de la galerie du musée des fails
+  var barre = document.querySelector("[data-filtres]");
+  if (barre) {
+    var boutons = barre.querySelectorAll("[data-filtre]");
+    var cartes = document.querySelectorAll(".carte-clip");
+    var videFiltre = document.getElementById("vide-filtre");
+    var appliquer = function (cle) {
+      var visibles = 0;
+      Array.prototype.forEach.call(cartes, function (carte) {
+        var ok = cle === "tous" || carte.getAttribute("data-categorie") === cle;
+        carte.hidden = !ok;
+        if (ok) visibles++;
+      });
+      Array.prototype.forEach.call(boutons, function (b) {
+        b.setAttribute("aria-pressed", b.getAttribute("data-filtre") === cle ? "true" : "false");
+      });
+      if (videFiltre) videFiltre.hidden = !(cartes.length > 0 && visibles === 0);
+    };
+    Array.prototype.forEach.call(boutons, function (b) {
+      b.addEventListener("click", function () { appliquer(b.getAttribute("data-filtre")); });
+    });
+  }
 })();

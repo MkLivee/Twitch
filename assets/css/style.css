@@ -241,6 +241,95 @@ p { margin: 0 0 1rem; }
 .faq details[open] summary::before { transform: rotate(45deg); }
 .faq details p { margin: 0.8rem 0 0 2.5rem; color: var(--texte-doux); }
 
+/* ---------- Défis du chat et Musée des fails ---------- */
+
+.retour { margin: 1.5rem 0 0; }
+.retour a { text-decoration: none; font-weight: 600; }
+.retour a:hover { text-decoration: underline; }
+.accroche { font-family: var(--titre); font-weight: 500; font-size: clamp(1.15rem, 2.6vw, 1.5rem); color: var(--or-clair); line-height: 1.3; margin-top: 1rem; }
+.tete-page--emote .tete-page__emote { width: 8rem; height: 8rem; }
+@media (min-width: 48rem) { .tete-page--emote .tete-page__emote { width: 9rem; height: 9rem; } }
+
+/* Cadre biseauté : bord doré fin, coins coupés, reflet très discret */
+.biseau {
+  --coupe: 14px; position: relative; padding: 1px;
+  background: linear-gradient(135deg, rgba(246, 230, 168, 0.6), rgba(215, 178, 76, 0.22) 45%, rgba(246, 230, 168, 0.4));
+  clip-path: polygon(var(--coupe) 0, 100% 0, 100% calc(100% - var(--coupe)), calc(100% - var(--coupe)) 100%, 0 100%, 0 var(--coupe));
+}
+.biseau__int {
+  position: relative; height: 100%; padding: 1.25rem 1.35rem 1.35rem; background: #18181b;
+  clip-path: polygon(var(--coupe) 0, 100% 0, 100% calc(100% - var(--coupe)), calc(100% - var(--coupe)) 100%, 0 100%, 0 var(--coupe));
+}
+.biseau__int::before {
+  content: ""; position: absolute; inset: 0 0 auto 0; height: 3.5rem; pointer-events: none;
+  background: linear-gradient(180deg, rgba(246, 230, 168, 0.07), transparent);
+}
+
+.cartes, .galerie { list-style: none; margin: 1.25rem 0 0; padding: 0; display: grid; gap: 1.1rem; }
+@media (min-width: 48rem) { .cartes { grid-template-columns: repeat(2, 1fr); } .galerie { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 62rem) { .cartes, .galerie { grid-template-columns: repeat(3, 1fr); } }
+
+.carte h3, .carte-clip h3 { font-size: 1.1rem; margin: 0.7rem 0 0.5rem; color: #f5f0e6; }
+.carte p { margin: 0.7rem 0 0; color: var(--texte-doux); }
+.carte__tete { display: flex; }
+
+.puces { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.puces li {
+  padding: 0.15rem 0.7rem; border-radius: 999px; font-size: 0.88rem; color: #e6e2d8;
+  background: rgba(255, 255, 255, 0.07); border: 1px solid rgba(246, 230, 168, 0.18);
+}
+
+/* Statuts : toujours écrits en toutes lettres, la couleur n'est qu'un renfort */
+.statut { display: inline-block; padding: 0.2rem 0.8rem; border-radius: 999px; font-size: 0.85rem; font-weight: 700; border: 1px solid currentColor; }
+.statut--idee { color: #f5f0e6; background: rgba(245, 240, 230, 0.08); }
+.statut--valide { color: #f6e6a8; background: rgba(215, 178, 76, 0.14); }
+.statut--reussi { color: #a8dfb6; background: rgba(120, 190, 140, 0.14); }
+.statut--echoue { color: #f0aaaa; background: rgba(220, 120, 120, 0.14); }
+
+.etapes li { align-items: center; }
+
+/* Navigation locale d'une page à rubriques : discrète, sans masquer le contenu */
+.nav-locale { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.4rem; }
+.nav-locale a {
+  padding: 0.45rem 1rem; border-radius: 999px; border: 1px solid var(--bord); background: var(--verre);
+  color: var(--texte-fort); text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: border-color 0.2s, background-color 0.2s;
+}
+.nav-locale a:hover, .nav-locale a:focus-visible { border-color: var(--or); background: var(--verre-fort); color: var(--texte-fort); }
+.bloc > h2[id] { scroll-margin-top: 6rem; }
+.bloc > .accroche { margin: -0.4rem 0 1.1rem; }
+
+/* Chronologie des petites victoires */
+.chrono { list-style: none; margin: 1.25rem 0 0; padding: 0 0 0 1.6rem; position: relative; display: grid; gap: 1.1rem; }
+.chrono::before { content: ""; position: absolute; left: 0.45rem; top: 0.6rem; bottom: 0.6rem; width: 2px; background: linear-gradient(180deg, var(--or-clair), var(--or-sombre)); opacity: 0.7; }
+.jalon { position: relative; }
+.jalon__point { position: absolute; left: -1.6rem; top: 1.1rem; width: 0.95rem; height: 0.95rem; border-radius: 50%; background: var(--or-irise); box-shadow: 0 0 0 4px var(--fond); }
+.jalon__date { margin: 0 0 0.3rem; font-size: 0.9rem; color: var(--or-clair); }
+.jalon h3 { margin: 0 0 0.4rem; color: #f5f0e6; }
+.jalon p { margin: 0 0 0.6rem; color: var(--texte-doux); }
+.bloc .actions { margin-top: 1.4rem; }
+
+/* Musée : filtres et clips */
+.filtres { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0 0 1.25rem; }
+.filtre {
+  padding: 0.55rem 1.15rem; border-radius: 999px; border: 1px solid var(--bord); background: var(--verre);
+  color: var(--texte-fort); font: inherit; font-weight: 600; cursor: pointer; transition: background-color 0.2s, border-color 0.2s;
+}
+.filtre:hover { border-color: var(--or); }
+.filtre[aria-pressed="true"] { background: var(--or-irise); color: #17140b; border-color: transparent; }
+
+.carte-clip[hidden] { display: none; }
+.carte-clip__vignette { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 6px; background: #101012; margin: 0 0 0.9rem; }
+.carte-clip__vignette--vide { display: grid; place-items: center; border: 1px solid rgba(246, 230, 168, 0.14); }
+.carte-clip__vignette--vide img { width: 45%; height: auto; opacity: 0.35; }
+.bouton--clip { margin-top: 0.4rem; padding: 0.6rem 1.2rem; font-size: 0.95rem; }
+
+.vide { margin: 1rem 0 0; padding: 1.4rem 1.5rem; border: 1px dashed rgba(246, 230, 168, 0.35); border-radius: 18px; color: var(--texte-doux); text-align: center; }
+.vide[hidden] { display: none; }
+.vide p { margin: 0; }
+.vide p + p { margin-top: 0.3rem; }
+.vide--musee { padding: 2.2rem 1.5rem; font-size: 1.1rem; }
+.vide--musee strong { color: #f5f0e6; font-family: var(--titre); font-weight: 500; }
+
 /* Pied de page */
 .pied { margin-top: 2rem; padding: 2rem 0 3rem; }
 .pied__contenu { max-width: 70rem; margin: 0 auto; padding: 0 0.75rem; display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; justify-content: space-between; color: var(--texte-doux); }
