@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VIP et modération — MkLive</title>
+  <meta name="description" content="Comment devenir VIP ou rejoindre l'équipe de modération de MkLive, et les commandes de l'équipe.">
+  <meta name="theme-color" content="#121214">
+  <link rel="preload" href="../assets/fonts/unbounded-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/figtree-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <div class="filigrane" aria-hidden="true">
+    <object id="filigrane-svg" data="../assets/img/logo/logo-anime.svg" type="image/svg+xml"><img src="../assets/img/logo/logo-mklive-transparent.png" alt=""></object>
+  </div>
+
+  <header class="entete">
+    <div class="entete__contenu">
+      <a class="marque" href="../" aria-label="MkLive, accueil"><img src="../assets/img/logo/logo-mklive-transparent.png" alt="MkLive"></a>
+      <nav aria-label="Pages du site">
+        <ul class="menu">
+          <li><a href="../regles/">Règlement</a></li>
+          <li><a href="../abonner/">S'abonner</a></li>
+          <li><a href="../setup/">Config</a></li>
+          <li><a href="../pokemon/">Pokémon</a></li>
+          <li><a href="../commandes/">Commandes</a></li>
+          <li><a href="../vip-modo/" aria-current="page">VIP et modo</a></li>
+          <li><a href="../faq/">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu" class="page">
+    <section class="tete-page">
+      <div>
+        <h1>VIP et modération</h1>
+        <p class="chapeau">Ces deux rôles ne s'achètent pas : ils récompensent ceux qui font vivre la Mk Family.</p>
+      </div>
+    </section>
+
+    <div class="grille">
+      <section class="bloc bloc--moitie" aria-labelledby="t-vip">
+        <h2 id="t-vip">Devenir VIP</h2>
+        <p>Envie de devenir VIP de la Mk Family ? Sois actif, bienveillant et investi dans la communauté !</p>
+        <p>Les VIP sont choisis pour leur <strong>fidélité</strong> et leur <strong>bonne humeur</strong>, pas pour leurs dons ou leurs abonnements.</p>
+        <p>Le statut est attribué par le streamer, en fonction de l'<strong>affection</strong> qu'il porte à chacun et de l'<strong>activité</strong> du viewer dans le chat.</p>
+      </section>
+      <section class="bloc bloc--moitie" aria-labelledby="t-modo">
+        <h2 id="t-modo">Rejoindre la modération</h2>
+        <p>Envie de rejoindre l'équipe de modération MkLive ? Montre ton sérieux, ta maturité et ton implication dans la communauté !</p>
+        <p>Les modérateurs sont sélectionnés selon les <strong>besoins de la chaîne</strong> et la <strong>confiance accordée</strong>.</p>
+        <p><strong>Comment postuler ?</strong> Ouvre un ticket sur le <a href="https://discord.gg/mRp8CDYbB3">Discord</a> et envoie une petite candidature, tant que le recrutement est ouvert.</p>
+        <div class="note"><p><strong>Bon à savoir.</strong> Les VIP et les modérateurs ne sont pas soumis aux filtres automatiques du chat (liens, majuscules, répétitions).</p></div>
+      </section>
+      <section class="bloc bloc--large" aria-labelledby="t-outils">
+        <h2 id="t-outils">Les commandes de l'équipe</h2>
+        <p class="groupe">Réservées aux modérateurs. Elles agissent directement sur le chat et sur la chaîne.</p>
+<ul class="commandes commandes--deux">
+<li class="commande"><code>!permit pseudo</code><p>Autorise quelqu'un à poster un lien pendant une minute.</p><button class="copier" type="button" data-texte="!permit ">Copier</button></li>
+<li class="commande"><code>!lock</code><p>Mode urgence : active le mode lent et le mode suiveurs uniquement.</p><button class="copier" type="button" data-texte="!lock">Copier</button></li>
+<li class="commande"><code>!unlock</code><p>Met fin au mode urgence et rouvre le chat.</p><button class="copier" type="button" data-texte="!unlock">Copier</button></li>
+<li class="commande"><code>!so pseudo</code><p>Met en avant un autre streamer.</p><button class="copier" type="button" data-texte="!so ">Copier</button></li>
+<li class="commande"><code>!raid pseudo</code><p>Annonce et lance un raid vers un streamer (écris le pseudo sans @).</p><button class="copier" type="button" data-texte="!raid ">Copier</button></li>
+<li class="commande"><code>!annonce texte</code><p>Envoie une annonce mise en avant dans le chat.</p><button class="copier" type="button" data-texte="!annonce ">Copier</button></li>
+<li class="commande"><code>!settitre texte</code><p>Change le titre du live.</p><button class="copier" type="button" data-texte="!settitre ">Copier</button></li>
+<li class="commande"><code>!setjeu jeu</code><p>Change la catégorie du live.</p><button class="copier" type="button" data-texte="!setjeu ">Copier</button></li>
+<li class="commande"><code>!sondage question | choix 1 | choix 2</code><p>Lance un sondage Twitch de deux minutes (de 2 à 5 choix).</p><button class="copier" type="button" data-texte="!sondage ">Copier</button></li>
+<li class="commande"><code>!prediction question | choix 1 | choix 2</code><p>Lance une prédiction Twitch.</p><button class="copier" type="button" data-texte="!prediction ">Copier</button></li>
+<li class="commande"><code>!gagnant 1</code><p>Désigne le choix gagnant d'une prédiction (son numéro).</p><button class="copier" type="button" data-texte="!gagnant ">Copier</button></li>
+<li class="commande"><code>!annuler</code><p>Annule la prédiction en cours.</p><button class="copier" type="button" data-texte="!annuler">Copier</button></li>
+<li class="commande"><code>!win</code><p>Ajoute une victoire au score de la session.</p><button class="copier" type="button" data-texte="!win">Copier</button></li>
+<li class="commande"><code>!lose</code><p>Ajoute une défaite au score de la session.</p><button class="copier" type="button" data-texte="!lose">Copier</button></li>
+<li class="commande"><code>!resetscore</code><p>Remet le score à zéro.</p><button class="copier" type="button" data-texte="!resetscore">Copier</button></li>
+<li class="commande"><code>!brb</code><p>Annonce une courte pause.</p><button class="copier" type="button" data-texte="!brb">Copier</button></li>
+<li class="commande"><code>!retour</code><p>Annonce que le live reprend.</p><button class="copier" type="button" data-texte="!retour">Copier</button></li>
+<li class="commande"><code>!clip</code><p>Crée un clip du moment.</p><button class="copier" type="button" data-texte="!clip">Copier</button></li>
+</ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="pied">
+    <div class="pied__contenu">
+      <img src="../assets/img/logo/logo-mklive-transparent.png" alt="MkLive">
+      <p>Chaîne Twitch mklivee. Merci d'être là, la Mk Family compte sur toi. <a href="https://discord.gg/mRp8CDYbB3">Retrouve-nous sur Discord</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
