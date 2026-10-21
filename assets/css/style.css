@@ -119,11 +119,26 @@ p { margin: 0 0 1rem; }
 .bouton--grand { padding: 1rem 2.1rem; font-size: 1.15rem; }
 
 /* Bouton « S'abonner » toujours visible dans l'en-tête */
+.entete__sep { flex: none; width: 1px; align-self: stretch; margin: 0.3rem 0; background: linear-gradient(180deg, transparent, var(--bord), transparent); }
 .entete__cta {
-  flex: none; padding: 0.45rem 1.1rem; border-radius: 999px; background: var(--or-irise); color: #17140b;
-  font-weight: 700; text-decoration: none; white-space: nowrap; transition: filter 0.2s;
+  --coupe: 10px; position: relative; overflow: hidden; flex: none; display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.6rem 1.3rem; color: #17140b; font-family: var(--titre); font-weight: 600; font-size: 0.9rem; letter-spacing: -0.01em;
+  text-decoration: none; white-space: nowrap;
+  background: linear-gradient(135deg, #fbefb8 0%, #e6c35c 45%, #c99a2a 100%);
+  clip-path: polygon(var(--coupe) 0, 100% 0, 100% calc(100% - var(--coupe)), calc(100% - var(--coupe)) 100%, 0 100%, 0 var(--coupe));
 }
-.entete__cta:hover { filter: brightness(1.12); color: #17140b; }
+.entete__cta::after {
+  content: ""; position: absolute; inset: -30% auto -30% -60%; width: 45%; transform: skewX(-20deg); pointer-events: none;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.6), transparent); transition: left 0.6s ease;
+}
+.entete__cta:hover, .entete__cta:focus-visible { color: #17140b; }
+.entete__cta:hover::after, .entete__cta:focus-visible::after { left: 130%; }
+.entete__coeur { flex: none; color: #8f2f3b; }
+@media (max-width: 40rem) {
+  .entete__cta { padding: 0.5rem 0.95rem; font-size: 0.85rem; }
+  .entete__cta .entete__coeur { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .entete__cta::after { transition: none; } }
 
 /* Grille de blocs de largeurs variées */
 .grille { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin: 1.5rem 0; }
