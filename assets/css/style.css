@@ -90,6 +90,14 @@ h3 { font-size: 1.05rem; margin-bottom: 0.3rem; }
 .chapeau { font-size: 1.2rem; color: var(--texte-doux); margin: 1rem 0 0; max-width: 38rem; }
 p { margin: 0 0 1rem; }
 
+/* Présentation de l'accueil : un emoji devant chaque bloc */
+.presentation { list-style: none; margin: 1.4rem 0 0; padding: 0; display: grid; gap: 0.9rem; max-width: 40rem; }
+.presentation li { display: grid; grid-template-columns: 2rem 1fr; gap: 0.7rem; align-items: start; color: var(--texte-doux); font-size: 1.1rem; }
+.presentation span { font-size: 1.35rem; line-height: 1.4; }
+.presentation p { margin: 0; }
+.presentation strong { color: var(--texte-fort); }
+.presentation + .chapeau { margin-top: 1.4rem; }
+
 .tete-page { padding: 3rem 0 1rem; display: grid; gap: 1.5rem; align-items: center; }
 .tete-page--emote { grid-template-columns: 1fr; }
 .tete-page__emote { width: 8rem; height: 8rem; object-fit: contain; filter: drop-shadow(0 10px 28px rgba(215, 178, 76, 0.3)); }
